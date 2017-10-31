@@ -6,7 +6,7 @@
 -->
 
 <template>
-  <div>
+  <div id="app">
     <app-header></app-header>
     <section class="main-section section">
       <div class="container content">

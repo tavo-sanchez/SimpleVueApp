@@ -7,7 +7,9 @@ const path = require('path')
 // assets/js directory
 const config = {
   entry: {
-    app: path.resolve(__dirname, '../src/client-entry.js')
+    app: path.resolve(__dirname, '../src/client-entry.js'),
+    // adding vendors to put all the js from other files in just one file
+    vendor: ['vue', 'vue-router', 'vuex', 'axios']
   },
   module: {
     rules: [

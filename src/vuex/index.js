@@ -34,7 +34,11 @@ const store = new Vuex.Store({
 
             resolve()
           })
-          .catch(() => window.alert('Could not login!'))
+          .catch(() => {
+            if (typeof window !== 'undefined') {
+              window.alert('Could not login!')
+            }
+          })
       })
     }
   },
